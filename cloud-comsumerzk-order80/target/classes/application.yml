@@ -1,0 +1,8 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-provider-order
+  cloud:
+    zookeeper:
+      connect-string: 123.57.67.226:2181 #如果是集群环境用，隔开
