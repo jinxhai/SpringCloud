@@ -122,7 +122,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="1555" />
     <option name="height" value="850" />
@@ -359,12 +359,12 @@
       <workItem from="1596507734461" duration="13729000" />
       <workItem from="1596613789532" duration="7038000" />
       <workItem from="1596677067023" duration="10777000" />
-      <workItem from="1596764363769" duration="6106000" />
+      <workItem from="1596764363769" duration="6612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52060000" />
+    <option name="totallyTimeSpent" value="52566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,7 +376,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.347185" side_tool="true" weight="0.32162923" />
@@ -399,8 +400,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.58019525" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.5522788" weight="0.3764045" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32775453" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.54758716" visible="true" weight="0.36568213" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6815534" visible="true" weight="0.2546917" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.54758716" visible="true" weight="0.36568213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6815534" visible="true" weight="0.2546917" />
       <window_info anchor="bottom" id="Problems" order="15" weight="0.3286517" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="6" side_tool="true" />
