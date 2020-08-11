@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName PaymentContrllor
@@ -76,5 +77,16 @@ public class PaymentController {
     @GetMapping("/payment/lb")
     public String getPaymentLB() {
         return this.SERVER_PORT;
+    }
+
+    @GetMapping(value = "/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            // 暂停3秒钟
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return SERVER_PORT;
     }
 }
