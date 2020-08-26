@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.net.InetAddress;
 import java.net.URI;
+import java.net.UnknownHostException;
 import java.util.List;
 
 /**
@@ -77,5 +79,22 @@ public class OrderController {
         URI uri = serviceInstance.getUri();
 
         return restTemplate.getForObject(uri + "/payment/lb", String.class);
+    }
+
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin() {
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin", String.class);
+    }
+
+    public static void main(String[] args) {
+
+        try {
+            InetAddress address = InetAddress.getLocalHost();
+            System.out.println(address.getHostName());//主机名
+            System.out.println(address.getCanonicalHostName());//主机别名
+            System.out.println(address.getHostAddress());//获取IP地址
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
     }
 }

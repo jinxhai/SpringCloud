@@ -1,4 +1,4 @@
-package com.snailcreep.springcloud;
+package com.snailcreep.springcloud.controller;
 
 import com.alibaba.druid.sql.visitor.functions.If;
 import com.snailcreep.springcloud.entities.CommonResult;
@@ -85,5 +85,10 @@ public class PaymentController {
             e.printStackTrace();
         }
         return SERVER_PORT;
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return "hellp zipkin";
     }
 }
